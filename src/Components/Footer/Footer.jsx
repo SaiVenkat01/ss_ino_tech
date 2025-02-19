@@ -32,7 +32,7 @@ export const Footer = () => {
 
   return (
     <section
-      id="contact"
+      id="Footer"
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>

@@ -14,7 +14,6 @@ function App() {
         <Experience/>
         <Projects/>
         <Footer/>
-
       </div>
         )
       }
