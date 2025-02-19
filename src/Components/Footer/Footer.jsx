@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll.jsx";
 import emailjs from "emailjs-com";
+import { MdOutlineEmail } from 'react-icons/md'
+import { CiLinkedin } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
 const SERVICE_ID = "service_xsswb5d"
 const TEMPLATE_ID = "template_8kk5yrf"
@@ -31,17 +34,37 @@ export const Footer = () => {
   };
 
   return (
-    <section
-      id="Footer"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+    <section id="Footer" className="min-h-screen flex flex-col md:flex-row items-center justify-between py-20 px-30 md:px-20 lg:px-60">
+        <div className="w-full md:w-1/2 text-center md:text-left">
+            <div>
+                <h1 className='py-4 text-3xl sm:text-4xl md:text-6xl font-bold'>Contact</h1>
+                <h2 className='text-sm md:text-2xl font-normal'>Feel free to reach out</h2>
+            </div>
+            <div>
+                <ul className="py-10 text-sm md:text-xl">
+                <li className="flex gap-2 items-center justify-center md:justify-start">
+                  <MdOutlineEmail size={20} />
+                  myemail@gmail.com
+                </li>
+                <li className="flex gap-2 items-center justify-center md:justify-start">
+                  <CiLinkedin />
+                  linkdlin.com/username
+                </li>
+                <li className="flex gap-2 items-center justify-center md:justify-start">
+                  <FaGithub />
+                  github.com/username
+                </li>
+              </ul>
+            </div> 
+        </div>
+                
       <RevealOnScroll>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <div className="w-full md:w-1/2 max-w-sm sm:max-w-md md:max-w-lg lg:max-w-3xl mx-100 md:px-50 ">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             {" "}
             Get In Touch
           </h2>
-          <form className="space-y-6" onSubmit={handleSubmit}>
+          <form className="space-y-4" onSubmit={handleSubmit}>
             <div className="relative">
               <input
                 type="text"
@@ -71,7 +94,6 @@ export const Footer = () => {
                 }
               />
             </div>
-
             <div className="relative">
               <textarea
                 id="message"
@@ -86,11 +108,9 @@ export const Footer = () => {
                 }
               />
             </div>
-
             <button
               type="submit"
-              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
-            >
+              className="w-full bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]">
               Send Message
             </button>
           </form>
