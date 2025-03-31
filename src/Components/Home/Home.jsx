@@ -1,5 +1,5 @@
 import React from 'react'
-import avatarImg from "../../assets/7358602-removebg-preview.png"
+import avatarImg from "../../assets/logo_no_bg_crop.png"
 import TextChange from '../TextChange'
 const Home = () => {
   return (

@@ -1,18 +1,18 @@
-import About from "./Components/About/About";
+import VisionMission from "./Components/VisionMission/VisionMission";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
-import Projects from "./Components/Projects/Projects";
-import Footer from "./Components/Footer/Footer";
-import Experience from "./Components/Experience/Experience";
-
+import Footer from "./Components/Footer/Footer2";
+import CardLayout from "./Components/Cards/Cards";
+import LogoSlider from "./Components/Products/Products";
+import BioProducts from "./Components/BioProducts/BioProducts";
 function App() {
   return (
-      <div className="bg-green h-auto w-full overflow-hidden">
+      <div className="bg-green h-auto w-full overflow-hidden bg-amber-100">
         <Navbar/>
-        <Home/>
-        <About/>
-        <Experience/>
-        <Projects/>
+        <VisionMission/>
+        <BioProducts/>
+        <LogoSlider/>
+        <CardLayout/>
         <Footer/>
       </div>
         )
