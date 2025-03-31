@@ -41,7 +41,7 @@ const CardLayout = () => {
     ];
   
     return (
-        <div className="flex justify-between gap-4 px-40 mx-20">
+        <div className="flex flex-wrap justify-center gap-4 px-6 md:px-20 lg:px-40 mx-auto">
           {cards.map((card, index) => (
             <div key={index} className="max-w-xs w-full bg-blue-200 border border-gray-200 rounded-lg shadow-md overflow-hidden">
               <div className="bg-gray-300 h-40 flex items-center justify-center text-gray-500">
