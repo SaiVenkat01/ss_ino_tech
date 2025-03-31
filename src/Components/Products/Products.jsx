@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import product1 from '../../assets/Products/product_1.jpg';
-import product2 from '../../assets/Products/product_2.jpg';
-import product3 from '../../assets/Products/product_3.jpg';
-import product4 from '../../assets/Products/product_4.jpg';
-import product5 from '../../assets/Products/product_5.jpg';
-import product6 from '../../assets/Products/product_6.jpg';
-import product7 from '../../assets/Products/product_7.jpg';
+import product1 from '../../assets/Products/Product_1.jpg';
+import product2 from '../../assets/Products/Product_2.jpg';
+import product3 from '../../assets/Products/Product_3.jpg';
+import product4 from '../../assets/Products/Product_4.jpg';
+import product5 from '../../assets/Products/Product_5.jpg';
+import product6 from '../../assets/Products/Product_6.jpg';
+import product7 from '../../assets/Products/Product_7.jpg';
 
 const LogoSlider = () => {
   const [position, setPosition] = useState(0);
