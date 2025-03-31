@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import product1 from '../../assets/Products/Product_1.jpg';
+import product1 from '../../assets/Products/Product_8.jpg';
 import product2 from '../../assets/Products/Product_2.jpg';
 import product3 from '../../assets/Products/Product_3.jpg';
 import product4 from '../../assets/Products/Product_4.jpg';
